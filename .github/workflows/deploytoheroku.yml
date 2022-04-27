@@ -62,7 +62,7 @@ jobs:
       - name: Login to Heroku
         run: heroku container:login
       - name: Push Docker Container
-        run: heroku container:push web -a nf-todo-app
+        run: heroku container:push web -a nf-todo-app2
 
 
 
