@@ -50,7 +50,7 @@ jobs:
     needs: build-backend
     environment:
       name: production-heroku
-      url: https://todo-app.herokuapp.com/
+      url: https://nf-todo-app.herokuapp.com/
     env:
       HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
     steps:
@@ -62,7 +62,7 @@ jobs:
       - name: Login to Heroku
         run: heroku container:login
       - name: Push Docker Container
-        run: heroku container:push web -a todo-app
+        run: heroku container:push web -a nf-todo-app
 
 
 
