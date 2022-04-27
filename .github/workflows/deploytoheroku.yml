@@ -50,7 +50,7 @@ jobs:
     needs: build-backend
     environment:
       name: production-heroku
-      url: https://cgn-22-1-todo-app.herokuapp.com/
+      url: https://cgn-22-1-todo-app2.herokuapp.com/
     env:
       HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
     steps:
